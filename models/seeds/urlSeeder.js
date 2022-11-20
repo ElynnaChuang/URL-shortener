@@ -5,5 +5,5 @@ db.once('open', () => {
   URL.create({
     url: 'https://www.google.com.tw/?hl=zh_TW'
   })
-  console.log('done');
+  console.log('done')
 })
