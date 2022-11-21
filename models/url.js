@@ -1,7 +1,11 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 const urlSchema = new Schema({
-  url: {
+  urlBefore: {
+    type: String,
+    required: true
+  },
+  urlAfter: {
     type: String,
     required: true
   }

@@ -46,6 +46,11 @@ h3 {
   margin: 0 auto;
 }
 
+.url-after {
+  font-size: 20px;
+  text-decoration: none;
+}
+
 .btn-major {
   width: 80px;
   color: cornsilk;
@@ -66,7 +71,7 @@ h3 {
 
 .btn-copy:hover {
   color: cornsilk;
-  background-color: rgb(94, 210, 227);
+  background-color: rgb(124, 204, 217);
   transition: background-color 0.25s linear
 }
 

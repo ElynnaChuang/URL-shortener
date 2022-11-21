@@ -1,9 +1,20 @@
 <div class="container input-card">
   <div class="input-content text-center">
     <h3>網址縮短成功，點擊或複製以下連結</h3>
-    <a href="http://qqqqqq" style="text-decoration: none;">http://qqqqqq</a>
+    <a href="{{urlBefore}}" target="_blank" class="url-after">
+      <p id="urlAfter">{{ root }}/{{urlAfter}}</p>
+    </a>
     <div class="col-lg px-0 mt-4">
-      <button type="" class="btn btn-copy">複製</button>
+      <button type="" class="btn btn-copy" onclick="copyURL()">複製</button>
     </div>
   </div>
 </div>
+
+<script>
+  function copyURL() {
+    const URL = document.querySelector('#urlAfter').textContent
+    navigator.clipboard.writeText(URL) //Web API
+      .then(() => alert("Copy success!"))
+      .catch(() => alert("Copy fail..."))
+  }
+</script>
